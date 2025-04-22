@@ -720,6 +720,13 @@ section,
   .hero p {
     font-size: 20px;
   }
+
+  .hero img{
+    width: 100%;
+    object-fit: contain;
+    align-items: center;
+    
+  }
 }
 
 /*--------------------------------------------------------------
