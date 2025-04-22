@@ -1633,4 +1633,20 @@ section,
   margin-right: 15px; /* Aggiunge spazio tra il logo e il testo */
 }
 
+.language-switch {
+  margin-top: 15px;
+  text-align: center;
+}
+.language-switch button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  margin: 0 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.language-switch button:hover {
+  transform: scale(1.1);
+}
+
 
