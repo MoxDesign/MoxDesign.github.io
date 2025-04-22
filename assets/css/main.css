@@ -1649,4 +1649,59 @@ section,
   transform: scale(1.1);
 }
 
+/* Nasconde cerchi blu di default */
+#preloader::before,
+#preloader::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Preloader personalizzato */
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: #000000;  /* Sfondo nero */
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-container {
+  text-align: center;
+}
+
+.loader-logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.loading-bar {
+  width: 80%;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  animation: loading 3s linear infinite;
+}
+
+@keyframes loading {
+  to {
+    left: 100%;
+  }
+}
+
+
 

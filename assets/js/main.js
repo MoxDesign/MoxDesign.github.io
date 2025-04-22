@@ -64,9 +64,10 @@
   const preloader = document.querySelector('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
-      preloader.remove();
+      preloader.remove();  // Rimuove il preloader non appena la pagina è caricata
     });
   }
+  
 
   /**
    * Scroll top button
