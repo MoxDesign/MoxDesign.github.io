@@ -1649,6 +1649,22 @@ section,
   transform: scale(1.1);
 }
 
+.service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-bottom: 2rem; /* spazio per il pulsante */
+  position: relative;
+}
+
+.lang-toggle {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* Nasconde cerchi blu di default */
 #preloader::before,
 #preloader::after {
@@ -1702,6 +1718,9 @@ section,
     left: 100%;
   }
 }
+
+
+
 
 
 
