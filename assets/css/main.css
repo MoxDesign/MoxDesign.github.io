@@ -1719,10 +1719,64 @@ section,
   }
 }
 
+/* Nascondi l'immagine della firma per schermi di larghezza 1399px o inferiore */
+@media (max-width: 1399px) {
+  .about .col-md-6 img[src="assets/img/Firma.png"] {
+    display: none !important; /* Nasconde l'immagine della firma */
+  }
 
+  /* Centra l'immagine del profilo quando la firma è nascosta */
+  .about .col-md-6 img[src="assets/img/profile-img.jpg"] {
+    display: block;
+    margin: 0 auto; /* Centra orizzontalmente l'immagine */
+    max-width: 80%; /* Limita la larghezza dell'immagine del profilo */
+    height: auto; /* Mantieni le proporzioni originali dell'immagine */
+  }
+}
 
+/* Nascondi l'immagine della firma sui dispositivi mobili (fino a 768px) */
+@media (max-width: 768px) {
+  .about .col-md-6 img[src="assets/img/Firma.png"] {
+    display: none !important; /* Nasconde l'immagine della firma */
+  }
 
+  /* Centra l'immagine del profilo su dispositivi mobili */
+  .about .col-md-6 img[src="assets/img/profile-img.jpg"] {
+    display: block;
+    margin: 0 auto; /* Centra orizzontalmente l'immagine */
+    max-width: 90%; /* La foto del profilo si adatta bene su schermi piccoli */
+    height: auto; /* Mantieni le proporzioni originali dell'immagine */
+  }
+}
 
+/* Per tablet e dispositivi più grandi, firma visibile accanto alla foto */
+@media (min-width: 769px) and (max-width: 1399px) {
+  .about .col-md-6 img[src="assets/img/Firma.png"] {
+    display: block;
+    margin-left: 20px; /* Puoi regolare il margine se necessario */
+  }
 
+  /* Posizionamento normale dell'immagine del profilo quando la firma è visibile */
+  .about .col-md-6 img[src="assets/img/profile-img.jpg"] {
+    display: block;
+    margin: 0; /* Nessun margine aggiuntivo */
+    max-width: 90%; /* Riduci la larghezza per schermi di dimensioni intermedie */
+    height: auto; /* Mantieni le proporzioni originali dell'immagine */
+  }
+}
 
+/* Centrare l'immagine Programmi.png in modo reattivo */
+.about-me img[src="assets/img/Programmi.png"] {
+  display: block;
+  margin: 0 auto; /* Centra orizzontalmente l'immagine */
+  max-width: 70%; /* Limita la larghezza dell'immagine per evitare che diventi troppo grande su schermi grandi */
+  height: auto; /* Mantiene le proporzioni originali dell'immagine */
+  object-fit: contain; /* Impedisce che l'immagine venga distorta o stretta */
+}
 
+/* Per schermi molto grandi (Desktop), imposta una larghezza fissa per Programmi.png */
+@media (min-width: 1400px) {
+  .about-me img[src="assets/img/Programmi.png"] {
+    max-width: 60%; /* Mantiene l'immagine di Programmi.png più contenuta su schermi molto grandi */
+  }
+}
