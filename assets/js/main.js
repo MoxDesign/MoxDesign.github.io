@@ -174,27 +174,13 @@
           initIsotope.arrange({
             filter: this.getAttribute('data-filter')
           });
-          if (typeof aosInit === 'function') {
-            aosInit();
+          if (typeof AOS !== 'undefined') {
+            AOS.refresh();
           }
         });
       });
     
     });
-
-    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
-      filters.addEventListener('click', function() {
-        isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
-        this.classList.add('filter-active');
-        initIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        if (typeof aosInit === 'function') {
-          aosInit();
-        }
-      }, false);
-    });
-
   });
 
   /**
