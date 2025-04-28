@@ -165,6 +165,10 @@
         filter: filter,
         sortBy: sort
       });
+      
+      setTimeout(() => {
+        initIsotope.layout();
+      }, 500);
     
       // Solo dopo che Isotope è stato inizializzato, attiva i filtri
       isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
