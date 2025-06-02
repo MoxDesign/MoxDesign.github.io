@@ -1780,3 +1780,10 @@ section,
     max-width: 60%; /* Mantiene l'immagine di Programmi.png più contenuta su schermi molto grandi */
   }
 }
+
+  .portfolio-details-slider img {
+    max-height: 500px; /* oppure 400px, scegli tu */
+    object-fit: contain;
+    width: 100%;
+    margin: 0 auto;
+  }
