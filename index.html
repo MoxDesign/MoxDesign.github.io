@@ -175,10 +175,10 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-15 about-info d-flex flex-column align-items-center justify-content-center">
+       <!-- <div class="col-lg-15 about-info d-flex flex-column align-items-center justify-content-center">
           <h5>  </h5>
-          <h1><br><strong>Prove them wrong!</strong></h1>
-        </div>
+          <h1><br><strong>Prove them wrong!</strong></h1> 
+        </div>-->
       </div>
 
     </section><!-- /About Section -->
@@ -300,6 +300,65 @@
       </div>
 
     </section><!-- /Stats Section -->
+
+<!-- Highlight Project Section -->
+<section id="highlight-project" class="section bg-dark text-light py-5" style="background: url('assets/img/portfolio/music/11.jpg') center/cover no-repeat; background-blend-mode: multiply; background-color: rgba(0,0,0,0.9);">
+  <div class="container" data-aos="fade-up">
+    <div class="row align-items-center justify-content-center">
+
+      <!-- Slider -->
+      <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+        <div class="swiper highlight-swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "autoplay": {
+                "delay": 3000,
+                "disableOnInteraction": false
+              },
+              "effect": "fade",
+              "fadeEffect": {
+                "crossFade": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/music/MaybachCD.jpg" class="img-fluid rounded shadow" style="max-height: 500px;" alt="Maybach Cover 1">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/music/11.jpg" class="img-fluid rounded shadow" style="max-height: 500px;" alt="Maybach Cover 2">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/music/MaybachSPO.jpg" class="img-fluid rounded shadow" style="max-height: 500px;" alt="Maybach Cover 3">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testo -->
+      <div class="col-lg-6 text-center text-lg-start">
+        <h2 class="display-5 fw-bold mb-3" style="color: #fff; text-shadow: 2px 2px 8px rgba(0,0,0,0.600);">
+          "Maybach 2" Art Direction
+        </h2>
+        <p class="mb-4 fs-5">Ho avuto l'onore di realizzare la cover ufficiale per <strong>Il Ghost, Malsho, Stresi, Daxter & 3vis</strong>, un progetto che unisce arte visiva e musica street al massimo livello.</p>
+        <p class="mb-4 fs-6">Un lavoro curato nei minimi dettagli, che rappresenta l’identità dei 5 artisti in un’immagine d’impatto, potente, riconoscibile. Per me è stato un punto di svolta. <strong>Shqipet Milano</strong></p>
+        <a href="#portfolio" class="btn btn-outline-light btn-lg">
+          Scopri altri progetti <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
@@ -808,6 +867,48 @@
       </div>
     </div>
 
+<section id="talk" class="footer bg-white text-dark" style="margin: 0; padding: 0;">
+  <div style="
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 5vh; /* o 2rem per regolare */
+  ">
+    <!-- Sposta più vicino il “thanks” -->
+    <h2 style="
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      text-align: center;
+    ">
+      Thanks for <span style="font-family: Georgia, serif; font-style: italic;">watching</span>
+    </h2>
+
+    <h1 style="
+      font-size: 15vw;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      font-weight: bold;
+      text-align: center;
+    ">
+      LET’S TALK
+    </h1>
+  </div>
+</section>
+
+
+
+
+
+
+
+
 
 
 
@@ -845,6 +946,18 @@
   </div>
 </div>
 
+<script>
+  new Swiper('.highlight-swiper', {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
+    effect: 'slide',
+    slidesPerView: 1,
+    spaceBetween: 10
+  });
+</script>
 
 
   <!-- Vendor JS Files -->
