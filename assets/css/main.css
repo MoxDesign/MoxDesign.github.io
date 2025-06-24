@@ -1788,16 +1788,8 @@ section,
     margin: 0 auto;
   }
 
-  /*
-#talk {
-  outline: 4px solid red;
+  #talk {
+  height: 35vh;
+  margin: 0;
+  padding: 0;
 }
-
-#talk h2 {
-  outline: 4px solid blue;
-}
-
-#talk h1 {
-  outline: 4px solid green;
-}
-*/
