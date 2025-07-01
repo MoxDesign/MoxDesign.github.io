@@ -1838,3 +1838,15 @@ section,
   font-size: 0.95rem;
   color: #000;
 }
+
+    .btn-continues {
+      background-color: #3b28ff;
+      color: white;
+      font-weight: 500;
+      border-radius: 12px;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+    }
