@@ -1720,7 +1720,7 @@ section,
 }
 
 /* Nascondi l'immagine della firma per schermi di larghezza 1399px o inferiore */
-@media (max-width: 1399px) {
+@media (max-width: 1199px) {
   .about .col-md-6 img[src="assets/img/Firma.png"] {
     display: none !important; /* Nasconde l'immagine della firma */
   }
@@ -1734,36 +1734,7 @@ section,
   }
 }
 
-/* Nascondi l'immagine della firma sui dispositivi mobili (fino a 768px) */
-@media (max-width: 768px) {
-  .about .col-md-6 img[src="assets/img/Firma.png"] {
-    display: none !important; /* Nasconde l'immagine della firma */
-  }
 
-  /* Centra l'immagine del profilo su dispositivi mobili */
-  .about .col-md-6 img[src="assets/img/profile-img.jpg"] {
-    display: block;
-    margin: 0 auto; /* Centra orizzontalmente l'immagine */
-    max-width: 90%; /* La foto del profilo si adatta bene su schermi piccoli */
-    height: auto; /* Mantieni le proporzioni originali dell'immagine */
-  }
-}
-
-/* Per tablet e dispositivi più grandi, firma visibile accanto alla foto */
-@media (min-width: 769px) and (max-width: 1399px) {
-  .about .col-md-6 img[src="assets/img/Firma.png"] {
-    display: block;
-    margin-left: 20px; /* Puoi regolare il margine se necessario */
-  }
-
-  /* Posizionamento normale dell'immagine del profilo quando la firma è visibile */
-  .about .col-md-6 img[src="assets/img/profile-img.jpg"] {
-    display: block;
-    margin: 0; /* Nessun margine aggiuntivo */
-    max-width: 90%; /* Riduci la larghezza per schermi di dimensioni intermedie */
-    height: auto; /* Mantieni le proporzioni originali dell'immagine */
-  }
-}
 
 /* Centrare l'immagine Programmi.png in modo reattivo */
 .about-me img[src="assets/img/Programmi.png"] {
@@ -1839,14 +1810,32 @@ section,
   color: #000;
 }
 
-    .btn-continues {
-      background-color: #3b28ff;
-      color: white;
-      font-weight: 500;
-      border-radius: 12px;
-      padding: 0.75rem 2rem;
-      font-size: 1rem;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 1rem;
-    }
+.btn-continues {
+  background-color: #3b28ff;
+  color: white;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+
+.portfolio-item.block-instagram,
+blockquote.instagram-media {
+    min-height: 400px; /* adattalo in base al reel */
+}
+
+@media (max-width: 768px) {
+  #contact .row {
+    flex-wrap: nowrap;
+    overflow-x: auto; /* facoltativo: scroll orizzontale se troppo stretti */
+  }
+
+  #contact .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33%;
+  }
+}
