@@ -1842,3 +1842,16 @@ blockquote.instagram-media {
 
 
 
+.insta-wrapper { position: relative; }
+.insta-link {
+  position: absolute;
+  inset: 0;
+  z-index: 9999;          /* più alto */
+  text-indent: -9999px;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+
+
